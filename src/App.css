@@ -1,0 +1,39 @@
+#Ali-Stone {
+  text-align: center;
+  padding-top: 25px;
+  font-family: 'Lobster', cursive;
+  font-size: 1.75em;
+}
+
+#nyc-based-actress {
+  font-family: 'Oswald', sans-serif;
+  font-size: medium;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  color: gray;
+  text-align: center;
+  padding: 2px;
+}
+
+#navBarDiv {
+  background: black;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  background-color: #353da2c9;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: auto;
+  font-size: 14px;
+  padding: 2px;
+}
+
+#homepage-img {
+  width: 100%;
+  padding-top: 10px;
+}
+
+#header-div {
+  margin-bottom: 10px;
+}
