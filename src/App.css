@@ -16,17 +16,33 @@
 }
 
 #navBarDiv {
-  /* background: black;
-  font-family: 'Oswald', sans-serif;
+  background: black;
+  font-family: 'Lexend Deca', sans-serif;
   display: flex;
-  background-color: #353da2c9;
-  justify-content: center; */
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 35px;
+  text-align: center;
+}
+
+#navBarDiv :last-child {
+  border: none;
 }
 
 .nav-link {
-  margin: auto;
-  font-size: 14px;
-  padding: 2px;
+  font-size: 15px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  width: 50%;
+  align-self: center;
+  /* font-family: 'Oswald', sans-serif; */
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
 }
 
 #homepage-img {
