@@ -2,27 +2,32 @@ import React from 'react';
 import { BrowserRouter as Route, Link } from 'react-router-dom';
 import styled from 'styled-components'
 
-const Nav = () => {
+const NavIcon = styled.div`
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+`
+const divStyles = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-end"
+}
 
-  const NavIcon = styled.div`
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  `
-  const divStyles`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  `
 
-  return (
-    <div style={{divStyles}}>
-      <NavIcon></NavIcon>
-      <NavIcon></NavIcon>
-      <NavIcon></NavIcon>
-    </div>
-  )
+class Nav extends React.Component {
+
+
+  render () {
+    return (
+      <div style={divStyles}>
+        <NavIcon></NavIcon>
+        <NavIcon></NavIcon>
+        <NavIcon></NavIcon>
+      </div>
+    )
+  }
+
 }
 
 export default Nav
