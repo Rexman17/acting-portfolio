@@ -2,31 +2,30 @@ import React from 'react';
 import { BrowserRouter as Route, Link } from 'react-router-dom';
 import styled from 'styled-components'
 
-const NavIcon = styled.div`
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-`
+
 const divStyles = {
+  width: "35px",
+  height: "5px",
+  backgroundColor: "black",
+  margin: "3px 0"
+}
+
+const flexDivStyles = {
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-end"
 }
 
 
-class Nav extends React.Component {
+const Nav = (props) => {
 
-
-  render () {
-    return (
-      <div style={divStyles}>
-        <NavIcon></NavIcon>
-        <NavIcon></NavIcon>
-        <NavIcon></NavIcon>
-      </div>
-    )
-  }
+  return (
+    <div onClick={() => props.seeNav()} style={flexDivStyles}>
+      <div style={divStyles}></div>
+      <div style={divStyles}></div>
+      <div style={divStyles}></div>
+    </div>
+  )
 
 }
 

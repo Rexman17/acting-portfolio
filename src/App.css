@@ -16,11 +16,11 @@
 }
 
 #navBarDiv {
-  background: black;
+  /* background: black;
   font-family: 'Oswald', sans-serif;
   display: flex;
   background-color: #353da2c9;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .nav-link {
