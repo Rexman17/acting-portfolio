@@ -2,8 +2,10 @@ import React, { Fragment } from 'react';
 import './App.css';
 import HomePage from './components/HomePage'
 import About from './components/About'
+import Resume from './components/Resume'
 import Nav from './components/Nav'
 import ExposedNav from './components/ExposedNav'
+import StickyHeader from './components/StickyHeader'
 import { Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
@@ -26,9 +28,11 @@ class App extends React.Component {
     return (
       <Fragment>
           {this.state.seeNav ? <ExposedNav hideNav={this.hideNav} /> :   <Nav seeNav={this.seeNav} />}
+          <StickyHeader />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/resume" component={Resume} />
         </Switch>
     </Fragment>
     )
