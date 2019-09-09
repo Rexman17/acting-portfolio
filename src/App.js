@@ -8,17 +8,13 @@ import ExposedNav from './components/ExposedNav'
 class App extends React.Component {
 
   state = {
-    seeNav: false,
-    hideNav: false
+    seeNav: false
   }
 
-  seeNav = () => {
-    this.setState({ seeNav: !this.state.seeNav })
-  }
+  // TODO: Refactor into one function
+  seeNav = () => { this.setState({ seeNav: !this.state.seeNav }) }
 
-  hideNav = () => {
-    console.log("hide that nav!")
-  }
+  hideNav = () => { this.setState({ seeNav: !this.state.seeNav })}
 
   render () {
     return (

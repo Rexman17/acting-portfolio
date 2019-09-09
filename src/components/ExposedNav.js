@@ -6,7 +6,7 @@ const ExposedNav = (props) => {
 
   return (
     <div id="navBarDiv">
-      <button style={{color: "white"}} onClick={() => props.hideNav()}>X</button>
+      <button style={{color: "white", fontSize: "15px"}} onClick={() => props.hideNav()}>X</button>
       <div className="nav-link">
         <Link to="/">
           HOME
