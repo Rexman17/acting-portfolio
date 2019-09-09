@@ -7,7 +7,7 @@ const StickyHeader = () => {
     <div id="header-div">
       <Nav/>
       <div id="Ali-Stone">
-        Ali Stone
+        ALI STONE
       </div>
         <div id="nyc-based-actress">
           NYC BASED ACTOR
