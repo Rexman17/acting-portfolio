@@ -4,8 +4,7 @@ import HomePage from './components/HomePage'
 import About from './components/About'
 import Nav from './components/Nav'
 import ExposedNav from './components/ExposedNav'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { withRouter } from 'react-router'
+import { Route, Switch } from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -14,29 +13,24 @@ class App extends React.Component {
   }
 
   // TODO: Refactor into one function
-  seeNav = () => { this.setState({ seeNav: !this.state.seeNav }) }
+  // seeNav = () => { this.setState({ seeNav: !this.state.seeNav }) }
+
+  seeNav = () => {
+    console.log("seeNav in App")
+    this.setState({ seeNav: !this.state.seeNav }, () => console.log(this.state))
+   }
 
   hideNav = () => { this.setState({ seeNav: !this.state.seeNav })}
 
   render () {
     return (
       <Fragment>
-        <Nav seeNav={this.seeNav} />
+          {this.state.seeNav ? <ExposedNav hideNav={this.hideNav} /> :   <Nav seeNav={this.seeNav} />}
         <Switch>
-          <Route exact path="/" render={() => {
-            return (
-              <Fragment>
-                { this.state.seeNav ? <ExposedNav hideNav={this.hideNav} /> :
-                  <Fragment>
-                  <HomePage />
-                  </Fragment>
-                }
-              </Fragment>
-            )
-          }} />
+          <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={About} />
         </Switch>
-      </Fragment>
+    </Fragment>
     )
   }
 

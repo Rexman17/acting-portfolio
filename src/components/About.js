@@ -1,8 +1,7 @@
 import React from 'react';
-import Nav from './Nav'
 
-const About = (props) => {
-  console.log("about props", props)
+const About = () => {
+
   return (
     <div>
       ABOUT ME
