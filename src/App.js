@@ -4,6 +4,8 @@ import HomePage from './components/HomePage'
 import About from './components/About'
 import Nav from './components/Nav'
 import ExposedNav from './components/ExposedNav'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { withRouter } from 'react-router'
 
 class App extends React.Component {
 
@@ -18,16 +20,23 @@ class App extends React.Component {
 
   render () {
     return (
-      <div>
-        {
-          this.state.seeNav ? <ExposedNav hideNav={this.hideNav} /> :
-            <Fragment>
-              <Nav seeNav={this.seeNav} />
-              <HomePage />
-            </Fragment>
-        }
-
-      </div>
+      <Fragment>
+        <Nav seeNav={this.seeNav} />
+        <Switch>
+          <Route exact path="/" render={() => {
+            return (
+              <Fragment>
+                { this.state.seeNav ? <ExposedNav hideNav={this.hideNav} /> :
+                  <Fragment>
+                  <HomePage />
+                  </Fragment>
+                }
+              </Fragment>
+            )
+          }} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+      </Fragment>
     )
   }
 
