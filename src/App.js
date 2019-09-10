@@ -5,6 +5,7 @@ import About from './components/About'
 import Resume from './components/Resume'
 import Reels from './components/Reels'
 import Photos from './components/Photos'
+import Contact from './components/Contact'
 import Nav from './components/Nav'
 import ExposedNav from './components/ExposedNav'
 import StickyHeader from './components/StickyHeader'
@@ -37,6 +38,7 @@ class App extends React.Component {
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/reels" component={Reels} />
           <Route exact path="/photos" component={Photos} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
     </Fragment>
     )

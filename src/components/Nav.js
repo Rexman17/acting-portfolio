@@ -1,5 +1,4 @@
 import React from 'react';
-// import { BrowserRouter as Route, Link } from 'react-router-dom';
 
 const divStyles = {
   width: "35px",
@@ -12,7 +11,8 @@ const flexDivStyles = {
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-end",
-  marginRight: "3px"
+  marginRight: "4px",
+  marginTop: "3px"
 }
 
 
