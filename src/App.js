@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './components/HomePage'
 import About from './components/About'
 import Resume from './components/Resume'
+import Reels from './components/Reels'
 import Nav from './components/Nav'
 import ExposedNav from './components/ExposedNav'
 import StickyHeader from './components/StickyHeader'
@@ -33,6 +34,7 @@ class App extends React.Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={About} />
           <Route exact path="/resume" component={Resume} />
+          <Route exact path="/reels" component={Reels} />
         </Switch>
     </Fragment>
     )

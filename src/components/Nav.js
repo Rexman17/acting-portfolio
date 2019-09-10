@@ -11,12 +11,12 @@ const divStyles = {
 const flexDivStyles = {
   display: "flex",
   flexDirection: "column",
-  alignItems: "flex-end"
+  alignItems: "flex-end",
+  marginRight: "3px"
 }
 
 
 const Nav = (props) => {
-  // console.log("Nav props", props)
 
   return (
     <div onClick={() => props.seeNav()} style={flexDivStyles}>
