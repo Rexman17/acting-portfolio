@@ -59,3 +59,16 @@
   flex-direction: column;
   align-items: center;
 }
+
+#flex-imgs-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.headshot {
+  width: 100%;
+  transform: rotate(270deg);
+  margin-top: 50px;
+  border: 4px solid black;
+  margin-bottom: 20px;
+}

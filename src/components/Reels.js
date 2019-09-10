@@ -29,7 +29,6 @@ const Reels = () => {
         <ReactPlayer url='https://vimeo.com/214701364' width='360px' height='360px' />
         <ReactPlayer url='https://youtu.be/ENQGH-uYk34' width='360px' height='360px' />
       </div>
-
     </Fragment>
   )
 }
