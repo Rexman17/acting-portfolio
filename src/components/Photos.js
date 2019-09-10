@@ -7,7 +7,7 @@ const Photos = () => {
   return (
     <div id="flex-imgs-cont">
       <div>
-        <img class="headshot" src="https://res.cloudinary.com/flatiron-school/image/upload/v1568142185/Headshots/DSC_6222.jpg" alt="pic1" />
+        <img class="headshot" src="https://res.cloudinary.com/flatiron-school/image/upload/v1568152441/Headshots/DSC_6229.jpg.jpg" alt="pic1" />
         <img class="headshot" src="https://res.cloudinary.com/flatiron-school/image/upload/v1568139049/Headshots/DSC_6054.jpg" alt="pic3" />
         <img class="headshot" src="https://res.cloudinary.com/flatiron-school/image/upload/v1568139054/Headshots/DSC_6106.jpg" alt="pic5" />
       </div>
