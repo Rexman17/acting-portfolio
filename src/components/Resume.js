@@ -6,7 +6,7 @@ const Resume = () => {
   const ViewResume = styled.div`
     background-color: black;
     padding: 20px;
-    margin-top: 35px;
+    margin-top: 45px;
     border-radius: 40px;
     width: 35%;
     text-align: center;
@@ -23,20 +23,27 @@ const Resume = () => {
   const Anchor = styled.a`
     color: white;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     letter-spacing: 3px;
-    font-size: 15px;
+    font-size: 13px;
   `
 
   const RepTitle = styled.div`
-    margin-top: 40px;
-    font-family: 'Oswald', sans-serif;
+    margin-top: 45px;
+    font-family: 'Lexend Deca', sans-serif;
     letter-spacing: 3px;
     border-radius: 40px;
+    font-size: 15px;
     font-weight: bold;
   `
   const Rep = styled.div`
-
+    margin-top: 20px;
+    font-size: 11px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
   `
 
   return (
@@ -53,6 +60,12 @@ const Resume = () => {
           </span>
         <span class="fa fa-star checked"></span>
       </RepTitle>
+      <Rep>MKM Maude Kaplan Management</Rep>
+      <Rep>Take 3 Talent</Rep>
+      <Rep>Abrams Artists Agency</Rep>
+      <Rep>Paradigm Talent Agency</Rep>
+      <Rep>Stefanie Talent & Entertainment</Rep>
+      <Rep>Eileen Haves Talent Representatives</Rep>
     </FlexDiv>
   )
 }
