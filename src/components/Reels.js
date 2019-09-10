@@ -1,16 +1,36 @@
-import React from 'react';
-// import styled from 'styled-components'
-// import ReactPlayer from 'react-player'
+import React, { Fragment } from 'react';
+import styled from 'styled-components'
+import ReactPlayer from 'react-player'
 
 
 const Reels = () => {
 
-
+  const Title = styled.div`
+    margin-top: 45px;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 3px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  `
   return (
-    <div id="vids">
+    <Fragment>
+      <Title>Acting Reel</Title>
+      <div id="vids">
+      <ReactPlayer url='https://vimeo.com/264137125' width='360px' height='360px'/>
+      <Title>More Footage</Title>
+        <ReactPlayer url='https://vimeo.com/209432518' width='360px' height='360px' />
+        <ReactPlayer url='https://youtu.be/xCwraZK1EVU' width='360px' height='360px' />
+        <ReactPlayer url='https://youtu.be/4CBBexUo6lI' width='360px' height='360px' />
+        <ReactPlayer url='https://youtu.be/NaRAbGV_xAE' width='360px' height='360px' />
+        <ReactPlayer url='https://vimeo.com/214701364' width='360px' height='360px' />
+        <ReactPlayer url='https://youtu.be/ENQGH-uYk34' width='360px' height='360px' />
+      </div>
 
-      <iframe src="https://player.vimeo.com/video/264137125" width="350" height="350" title="acting reel" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
+    </Fragment>
   )
 }
 
