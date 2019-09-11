@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const StickyHeader = () => {
+const StickyHeader = (props) => {
 
   return (
-    <div id="header-div">
-      <div id="Ali-Stone">
-        ALI STONE
-      </div>
-        <div id="nyc-based-actress">
-          NYC BASED ACTOR
+    <Fragment>
+      { props.seeNav ? null :
+        <div id="header-div">
+          <div id="Ali-Stone">
+            ALI STONE
+          </div>
+            <div id="nyc-based-actress">
+              NYC BASED ACTOR
+            </div>
         </div>
-    </div>
+      }
+    </Fragment>
   )
 }
 

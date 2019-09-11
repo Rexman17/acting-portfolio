@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components'
 
-const Contact = () => {
+const Contact = (props) => {
 
   const ContactDiv = styled.div`
     display: flex;
@@ -31,13 +31,17 @@ const Contact = () => {
   `
 
   return (
-    <ContactDiv>
-      <H3>a.stone1794@gmail.com</H3>
-      <H2>Maude Kaplan Management</H2>
-      <H3>Maggie Maes</H3>
-      <H3>212-873-4303</H3>
-      <H3>maggie@mkmtalent.com</H3>
-    </ContactDiv>
+    <Fragment>
+    { props.seeNav ? null :
+      <ContactDiv>
+        <H3>a.stone1794@gmail.com</H3>
+        <H2>Maude Kaplan Management</H2>
+        <H3>Maggie Maes</H3>
+        <H3>212-873-4303</H3>
+        <H3>maggie@mkmtalent.com</H3>
+      </ContactDiv>
+    }    
+    </Fragment>
   )
 }
 

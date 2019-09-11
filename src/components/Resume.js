@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components'
 
 
-const Resume = () => {
+const Resume = (props) => {
 
   const ViewResume = styled.div`
     background-color: black;
@@ -48,26 +48,34 @@ const Resume = () => {
   `
 
   return (
-    <FlexDiv>
-      <ViewResume>
-        <Anchor href="https://drive.google.com/file/d/1fUBl-5ku_w4KWkqC2KODR0oX_Vmxz7Uh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          VIEW RESUME
-        </Anchor>
-      </ViewResume>
-      <RepTitle>
-        <span class="fa fa-star checked"></span>
-          <span style={{padding: "0px 5px"}}>
-            REPRESENTATION
-          </span>
-        <span class="fa fa-star checked"></span>
-      </RepTitle>
-      <Rep>MKM Maude Kaplan Management</Rep>
-      <Rep>Take 3 Talent</Rep>
-      <Rep>Abrams Artists Agency</Rep>
-      <Rep>Paradigm Talent Agency</Rep>
-      <Rep>Stefanie Talent & Entertainment</Rep>
-      <Rep>Eileen Haves Talent Representatives</Rep>
-    </FlexDiv>
+
+      <Fragment>
+      { props.seeNav ? null :
+        <FlexDiv>
+          <ViewResume>
+            <Anchor href="https://drive.google.com/file/d/1fUBl-5ku_w4KWkqC2KODR0oX_Vmxz7Uh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              VIEW RESUME
+            </Anchor>
+          </ViewResume>
+          <RepTitle>
+            <span class="fa fa-star checked"></span>
+              <span style={{padding: "0px 5px"}}>
+                REPRESENTATION
+              </span>
+            <span class="fa fa-star checked"></span>
+          </RepTitle>
+          <Rep>MKM Maude Kaplan Management</Rep>
+          <Rep>Take 3 Talent</Rep>
+          <Rep>Abrams Artists Agency</Rep>
+          <Rep>Paradigm Talent Agency</Rep>
+          <Rep>Stefanie Talent & Entertainment</Rep>
+          <Rep>Eileen Haves Talent Representatives</Rep>
+        </FlexDiv>
+      }
+
+      </Fragment>
+
+
   )
 }
 

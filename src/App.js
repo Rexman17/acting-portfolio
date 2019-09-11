@@ -31,15 +31,21 @@ class App extends React.Component {
   render () {
     return (
       <Fragment>
-          {this.state.seeNav ? <ExposedNav hideNav={this.hideNav} /> :   <Nav seeNav={this.seeNav} />}
-          <StickyHeader />
+          {this.state.seeNav ? <ExposedNav hideNav={this.hideNav} /> :
+          <Nav seeNav={this.seeNav} />}
+          <StickyHeader seeNav={this.state.seeNav} />
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/reels" component={Reels} />
-          <Route exact path="/photos" component={Photos} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/" render={(props) => <HomePage {...props} seeNav={this.state.seeNav} />} />
+
+          <Route exact path="/about" render={(props) => <About {...props} seeNav={this.state.seeNav} />} />
+
+          <Route exact path="/resume" render={(props) => <Resume {...props} seeNav={this.state.seeNav} />} />
+
+          <Route exact path="/reels" render={(props) => <Reels {...props} seeNav={this.state.seeNav} />} />
+
+          <Route exact path="/photos" render={(props) => <Photos {...props} seeNav={this.state.seeNav} />} />
+
+          <Route exact path="/contact" render={(props) => <Contact {...props} seeNav={this.state.seeNav} />} />
         </Switch>
         <Footer/>
     </Fragment>
