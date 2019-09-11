@@ -11,14 +11,25 @@ const About = () => {
     letter-spacing: 1px;
   `
 
+  const LI = styled.li`
+    margin: 10px 0;
+  `
+
 
   return (
     <div>
       <AboutMe>ABOUT ME</AboutMe>
-      <div style={{padding: "20px 30px"}}>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
-
-        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      <div style={{padding: "15px 15px"}}>
+        <ul>
+          <LI>New York native</LI>
+          <LI>Discovered my love of performing at a young age</LI>
+          <LI>Played competitive sports for a while until I decided to audition for the school play...</LI>
+          <LI>I got the lead role! And had to quit the lacrosse team (of which I was the captain...oh well)</LI>
+          <LI>Continued to perform in the school plays and never looked back</LI>
+          <LI>Studied under the teachings of Ann Gray Graf, Founder and Owner of The Actors Garage</LI>
+          <LI>Studied at The Second City in Chicago, UCB, Matt Newton Studio, and more...</LI>
+          <LI>See my Resume for my credits!</LI>
+        </ul>
       </div>
     </div>
   )

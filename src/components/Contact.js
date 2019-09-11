@@ -32,6 +32,7 @@ const Contact = () => {
 
   return (
     <ContactDiv>
+      <H3>a.stone1794@gmail.com</H3>
       <H2>Maude Kaplan Management</H2>
       <H3>Maggie Maes</H3>
       <H3>212-873-4303</H3>

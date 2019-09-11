@@ -47,6 +47,7 @@
 #homepage-img {
   width: 100%;
   padding-top: 10px;
+  position: fixed;
 }
 
 #header-div {
@@ -71,4 +72,14 @@
   margin-top: 50px;
   border: 4px solid black;
   margin-bottom: 20px;
+}
+
+#footer-txt {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: small;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  padding: 4px 0;
 }

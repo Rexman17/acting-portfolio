@@ -4,6 +4,7 @@ import HomePage from './components/HomePage'
 import About from './components/About'
 import Resume from './components/Resume'
 import Reels from './components/Reels'
+import Footer from './components/Footer'
 import Photos from './components/Photos'
 import Contact from './components/Contact'
 import Nav from './components/Nav'
@@ -40,6 +41,7 @@ class App extends React.Component {
           <Route exact path="/photos" component={Photos} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
+        <Footer/>
     </Fragment>
     )
   }
