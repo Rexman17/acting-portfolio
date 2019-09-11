@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components'
+import { device } from '../media-queries.js'
 
 const Contact = (props) => {
 
@@ -21,6 +22,10 @@ const Contact = (props) => {
     padding: 2px;
     margin-top: 40px;
     font-size: 18px;
+
+    @media ${device.tablet} {
+      font-size: 28px;
+    }
   `
 
   const H3 = styled.div`
@@ -28,6 +33,10 @@ const Contact = (props) => {
     font-family: 'Oswald', sans-serif;
     color: black;
     font-size: 16px;
+
+    @media ${device.tablet} {
+      font-size: 25px;
+    }
   `
 
   return (
@@ -40,7 +49,7 @@ const Contact = (props) => {
         <H3>212-873-4303</H3>
         <H3>maggie@mkmtalent.com</H3>
       </ContactDiv>
-    }    
+    }
     </Fragment>
   )
 }

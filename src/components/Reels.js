@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
+import { device } from '../media-queries.js'
 
 
 const Reels = (props) => {
@@ -15,6 +16,10 @@ const Reels = (props) => {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
+
+    @media ${device.tablet} {
+      font-size: 25px;
+    }
   `
   return (
     <Fragment>
@@ -22,14 +27,14 @@ const Reels = (props) => {
       <Fragment>
         <Title>Acting Reel</Title>
         <div id="vids">
-        <ReactPlayer url='https://vimeo.com/264137125' width='360px' height='360px'/>
+        <ReactPlayer className="vid-clip" url='https://vimeo.com/264137125' />
         <Title>More Footage</Title>
-          <ReactPlayer url='https://vimeo.com/209432518' width='360px' height='360px' />
-          <ReactPlayer url='https://youtu.be/xCwraZK1EVU' width='360px' height='360px' />
-          <ReactPlayer url='https://youtu.be/4CBBexUo6lI' width='360px' height='360px' />
-          <ReactPlayer url='https://youtu.be/NaRAbGV_xAE' width='360px' height='360px' />
-          <ReactPlayer url='https://vimeo.com/214701364' width='360px' height='360px' />
-          <ReactPlayer url='https://youtu.be/ENQGH-uYk34' width='360px' height='360px' />
+          <ReactPlayer className="vid-clip" url='https://vimeo.com/209432518' />
+          <ReactPlayer className="vid-clip" url='https://youtu.be/xCwraZK1EVU' />
+          <ReactPlayer className="vid-clip" url='https://youtu.be/4CBBexUo6lI'/>
+          <ReactPlayer className="vid-clip" url='https://youtu.be/NaRAbGV_xAE'/>
+          <ReactPlayer className="vid-clip" url='https://vimeo.com/214701364'/>
+          <ReactPlayer className="vid-clip" url='https://youtu.be/ENQGH-uYk34'/>
         </div>
       </Fragment>
     }

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components'
-
+import { device } from '../media-queries'
 
 const Resume = (props) => {
 
@@ -27,6 +27,14 @@ const Resume = (props) => {
     font-family: 'Lexend Deca', sans-serif;
     letter-spacing: 3px;
     font-size: 13px;
+
+    @media ${device.tablet} {
+      font-size: 18px;
+    }
+
+    @media ${device.laptop} {
+      font-size: 22px;
+    }
   `
 
   const RepTitle = styled.div`
@@ -36,6 +44,16 @@ const Resume = (props) => {
     border-radius: 40px;
     font-size: 15px;
     font-weight: bold;
+
+    @media ${device.tablet} {
+      font-size: 22px;
+      margin-top: 105px;
+    }
+
+    @media ${device.tablet} {
+      font-size: 32px;
+      margin-top: 105px;
+    }
   `
   const Rep = styled.div`
     margin-top: 20px;
@@ -45,6 +63,17 @@ const Resume = (props) => {
     background-color: white;
     color: black;
     text-transform: uppercase;
+
+    @media ${device.tablet} {
+      font-size: 18px;
+      margin-top: 40px;
+    }
+
+    @media ${device.laptop} {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+
   `
 
   return (

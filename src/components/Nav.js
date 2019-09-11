@@ -1,4 +1,5 @@
 import React from 'react';
+// import { device } from '../media-queries.js'
 
 const divStyles = {
   width: "35px",

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import { device } from '../media-queries.js'
 
 const Footer = () => {
 
@@ -9,6 +10,14 @@ const Footer = () => {
     width:100%;
     height:30px;   /* Height of the footer */
     background:black;
+
+    @media ${device.tablet} {
+      height:40px;
+    }
+
+    @media ${device.laptop} {
+      height:80px;
+    }
   `
 
   return (
