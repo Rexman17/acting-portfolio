@@ -46,9 +46,11 @@
 }
 
 #homepage-img {
-  width: 100%;
+  width: 40vw;
+  height: 60%;
   padding-top: 10px;
-  position: fixed;
+  margin-bottom: 20px;
+  /* position: fixed; */
 }
 
 #header-div {

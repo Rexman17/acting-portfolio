@@ -22,7 +22,8 @@ const About = (props) => {
 
   const LI = styled.li`
     margin: 10px 0;
-
+    font-family: 'Lexend Deca', sans-serif;
+    
     @media ${device.mobileS} {
       font-size: 15px;
     }
@@ -43,7 +44,6 @@ const About = (props) => {
     flex-direction: column;
 
   `
-
 
   return (
     <FlexDiv>
