@@ -9,7 +9,7 @@ const Contact = (props) => {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 50px;
   `
 
   const H2 = styled.div`
@@ -20,11 +20,15 @@ const Contact = (props) => {
     color: black;
     text-align: center;
     padding: 2px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 18px;
 
     @media ${device.tablet} {
       font-size: 28px;
+    }
+
+    @media ${device.laptop} {
+      font-size: 48px;
     }
   `
 
@@ -36,6 +40,10 @@ const Contact = (props) => {
 
     @media ${device.tablet} {
       font-size: 25px;
+    }
+
+    @media ${device.laptop} {
+      font-size: 38px;
     }
   `
 

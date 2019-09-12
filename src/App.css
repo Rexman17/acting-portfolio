@@ -46,10 +46,11 @@
 }
 
 #homepage-img {
-  width: 40vw;
+  width: 60vw;
   height: 60%;
   padding-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  transform: rotate(270deg);
   /* position: fixed; */
 }
 
@@ -67,6 +68,7 @@
 #flex-imgs-cont {
   display: flex;
   flex-direction: row;
+  padding: 30px;
 }
 
 .headshot {
@@ -124,8 +126,8 @@
 
 @media screen and (min-width: 1024px) {
   #footer-txt {
-    font-size: 30px;
-    padding-top: 15px;
+    font-size: 15px;
+    /* padding-top: 10px; */
   }
 
   .nav-link {
@@ -143,6 +145,19 @@
   .vid-clip {
     width: 400px;
     margin: 10px;
+  }
+
+  .headshot {
+    margin: 100px 0;
+  }
+
+  #homepage-img {
+    width: 40vw;
+    height: 50%;
+    /* padding-top: 10px; */
+    margin-top: 80px;
+    /* transform: rotate(270deg); */
+    /* position: fixed; */
   }
 
 }

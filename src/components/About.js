@@ -23,7 +23,7 @@ const About = (props) => {
   const LI = styled.li`
     margin: 10px 0;
     font-family: 'Lexend Deca', sans-serif;
-    
+
     @media ${device.mobileS} {
       font-size: 15px;
     }
@@ -42,7 +42,7 @@ const About = (props) => {
   const FlexDiv = styled.div`
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 80px;
   `
 
   return (

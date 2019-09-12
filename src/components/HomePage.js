@@ -11,7 +11,7 @@ const HomePage = (props) => {
   return (
     <div>
       {props.seeNav ? null : <FlexDiv>
-        <img id="homepage-img" src="https://res.cloudinary.com/flatiron-school/image/upload/c_thumb,w_2312/v1568152441/Headshots/DSC_6229.jpg" alt="ali stone" />
+        <img id="homepage-img" src="https://res.cloudinary.com/flatiron-school/image/upload/v1568152441/Headshots/DSC_6229.jpg" alt="ali stone" />
       </FlexDiv>}
     </div>
   )
